@@ -1,6 +1,7 @@
 import boto3
 from langchain_aws import ChatBedrock
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_aws.chat_models.bedrock import ChatBedrock
 
 def return_llm(type="claude"):
     """Initialize Claude AI model"""

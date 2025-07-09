@@ -110,9 +110,15 @@ def record_and_speak():
         send_progress_update(1, "recording")
         
         # Step 1: Record from microphone
-        record_audio(REC_WAV, duration)
+        # record_audio(REC_WAV, duration)
+        # print("✅ Recording complete")
+        # send_progress_update(1, "complete")
+
+        
+        record_audio(REC_WAV, int(duration))
         print("✅ Recording complete")
         send_progress_update(1, "complete")
+
 
         # Step 2: Transcribe the recorded audio
         print("🔤 Transcribing audio...")
